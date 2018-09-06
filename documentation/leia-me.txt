@@ -1,16 +1,8 @@
-# CStr
-
-Minimal C programming language with string as a primitive type
-
-
-# Original readme file, in portuguese:
-
-## Compilation
 Quinto trabalho de tradutores (2016.2)
 Gerador de Código Intermediário Executável: Linguagem CStr
 Feito por Eduardo Furtado - 09/0111575 - eduardoxfurtado@gmail.com
 
-### Unix
+----- UNIX -----
 Para compilar e executar o programa em ambiente unix, rode o script "090111575.sh". Por exêmplo:
 sh ./090111575.sh tac1.cstr
 sh ./090111575.sh tac2.cstr
@@ -26,7 +18,7 @@ tac/bin/tac tac4.cstr.tac
 tac/bin/tac tac5.cstr.tac
 
 
-### Windows
+----- WINDOWS -----
 Para compilar e executar o programa em ambiente windows, pode-se fazer:
 bison -o 090111575.tab.c -t -d -v 090111575.y & flex -o 090111575.yy.c 090111575.l & gcc -Wall 090111575.tab.c 090111575.yy.c semantica.c tac.c infix_to_postfix.c -lfl -o 090111575.o & 090111575.o tac1.cstr
 bison -o 090111575.tab.c -t -d -v 090111575.y & flex -o 090111575.yy.c 090111575.l & gcc -Wall 090111575.tab.c 090111575.yy.c semantica.c tac.c infix_to_postfix.c -lfl -o 090111575.o & 090111575.o tac2.cstr
@@ -42,8 +34,9 @@ tac/bin/tac.exe tac3.cstr.tac
 tac/bin/tac.exe tac4.cstr.tac
 tac/bin/tac.exe tac5.cstr.tac
 
-## Development environment
-### Unix (princípal ambiente de desenvolvimento utilizado durante esta etapa)
+----- VERSÕES DO AMBIENTE DE DESENVOLVIMENTO -----
+
+----- LINUX ----- (princípal ambiente de desenvolvimento utilizado durante esta etapa)
 
 $ gcc -v
 Using built-in specs.
@@ -78,7 +71,7 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 
-### Windows
+----- WINDOWS -----
 
 gcc -v
 Using built-in specs.
